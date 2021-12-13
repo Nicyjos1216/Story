@@ -1,0 +1,29 @@
+create schema `story`;
+use `story`;
+
+create table contributor(
+phone_no bigint primary key,
+name varchar(50),
+age integer,
+gender char,
+address varchar(50),
+plan_id integer,
+password varchar(50)
+);
+insert into contributor values(9009009001,'Mark',25,'M','Chicago',1,'cany@123');
+insert into contributor values(9009009002,'Steve',56,'M','Texas',2,'7hjUavb*');
+insert into contributor values(9009009003,'Linda',23,'F','New York',3,'@aPbj8');
+
+
+create table admin(
+phone_no bigint primary key,
+name varchar(50),
+age integer,
+gender char,
+address varchar(50),
+plan_id integer,
+password varchar(50)
+);
+insert into admin values(9009009004,'Abcd',20,'M','Canada',1,'abCd@123');
+insert into admin values(9009009005,'Efgh',50,'M','London',2,'efgAvb*');
+insert into admin values(9009009006,'Ijkl',30,'F','Germany',3,'@ijKj8');
