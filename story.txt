@@ -13,6 +13,8 @@ password varchar(50)
 insert into contributor values(9009009001,'Mark',25,'M','Chicago',1,'cany@123');
 insert into contributor values(9009009002,'Steve',56,'M','Texas',2,'7hjUavb*');
 insert into contributor values(9009009003,'Linda',23,'F','New York',3,'@aPbj8');
+select * from contributor;
+
 
 
 create table admin(
@@ -27,3 +29,18 @@ password varchar(50)
 insert into admin values(9009009004,'Abcd',20,'M','Canada',1,'abCd@123');
 insert into admin values(9009009005,'Efgh',50,'M','London',2,'efgAvb*');
 insert into admin values(9009009006,'Ijkl',30,'F','Germany',3,'@ijKj8');
+select * from admin;
+
+
+
+create table adminstory(
+storyId int primary key,
+storyTitle varchar(150),
+contributorName varchar(150),
+date varchar(50),
+comments varchar(1000)
+);
+insert into adminstory values(1, "The Potato, The Egg, And The Coffee Beans", " Deborah Elliott", "09-12-2021", "Life will always have problems and pressures, like the boiling water in the story. It’s how you respond and react to these problems that counts the most!");
+insert into adminstory values(2, "Two Frogs With The Same Problem", "Maddy", "10-12-2021", "People’s opinion of you will affect you, only if you believe it to be so. It’s better to believe in yourself.");
+insert into adminstory values(3, "The Tortoise And The Hare", "Aesop", "11-12-2021", "Slow and steady wins the race. When you work hard, stay focused, you can achieve anything, even when it seems impossible.");
+select * from adminstory;
